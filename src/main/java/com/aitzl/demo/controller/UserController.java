@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Modified:
  **/
 @RestController
-@RequestMapping("/boot")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
