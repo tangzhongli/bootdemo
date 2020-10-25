@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo.mapper.UserMapper">
-    <resultMap id="userMap" type="com.example.demo.entity.User">
+<mapper namespace="com.aitzl.demo.mapper.UserMapper">
+    <resultMap id="userMap" type="com.aitzl.demo.entity.User">
         <id property="id" column="id"/>
         <result property="username" column="username" />
         <result property="password" column="password" />
     </resultMap>
 
     <select id="findById" resultMap="userMap">
-select * from user where id=#{id}
-</select>
+    select * from user where id=#{id}
+    </select>
 </mapper>
